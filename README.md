@@ -1,4 +1,4 @@
-# Weather Forecast Web App
+# Weather Forecast Web Application
 
 A responsive and interactive weather application built using JavaScript, HTML, and CSS. The app utilizes the OpenWeatherMap API to fetch and display current weather conditions, hourly forecasts, and 5-day forecasts with dynamic UI updates.
 
@@ -33,8 +33,8 @@ A responsive and interactive weather application built using JavaScript, HTML, a
 ## fig 3 - Fail to detect location
 ![Screenshot 2025-05-19 124711](https://github.com/user-attachments/assets/ea38723f-4adf-4a95-8757-c8ec0c531742)
 
-## Demo Video
-https://drive.google.com/file/d/15NN7ZEO67wKJyTIq79YdlzO54gmoXws1/view?usp=sharing
+## Live Demo
+[https://drive.google.com/file/d/15NN7ZEO67wKJyTIq79YdlzO54gmoXws1/view?usp=sharing](https://swathi-s-shettigar.github.io/Weather-forecast-Application/)
 ## Getting Started
 
 ```bash
