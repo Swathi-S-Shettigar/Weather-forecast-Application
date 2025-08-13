@@ -1,5 +1,5 @@
 
-const apiKey = "aefa3b186751b453a28900519905e74f";
+const apiKey = "7940963701b55548c2c0cb807550fffc";
 
 const voiceBtn = document.getElementById('voiceBtn');
 const cityInput = document.getElementById('cityInput');
@@ -265,3 +265,4 @@ if (SpeechRecognition) {
 } else {
   voiceBtn.style.display = 'none'; // hide mic button if not supported
 }
+
