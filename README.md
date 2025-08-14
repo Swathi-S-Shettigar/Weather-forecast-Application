@@ -20,19 +20,7 @@ A responsive and interactive weather application built using JavaScript, HTML, a
 - **APIs Used**:
   - `/weather`
   - `/forecast`
-  - `/onecall` (for air conditions)
-
-## Screenshots
-
-## Fig 1 - Auto-detects user's location and fetches weather data
-![Screenshot 2025-05-19 124615](https://github.com/user-attachments/assets/2145f7e2-500e-48f5-9836-117e2d946c1f)
-
-## Fig 2 - Search cities via Web Speech API
-![Screenshot 2025-05-19 124832](https://github.com/user-attachments/assets/79d73715-6e54-480f-ae59-52dc3ac4ab7a)
-
-## fig 3 - Fail to detect location
-![Screenshot 2025-05-19 124711](https://github.com/user-attachments/assets/ea38723f-4adf-4a95-8757-c8ec0c531742)
-
+  
 ## Live Demo
 (https://swathi-s-shettigar.github.io/Weather-forecast-Application/)
 
