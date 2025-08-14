@@ -4,82 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Forecast</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="image.png" type="image/x-icon" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="left-panel">
-       
-
-        <div class="rounded-search">
-          <input type="text" placeholder="Search..." id="cityInput" />
-          <button onclick="getWeatherByCity()">
-            <svg height="20" width="20" viewBox="0 0 24 24" fill="#ffffff">
-              <path
-                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 
-               16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 
-               9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 
-               4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 
-               5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 
-               11.99 14 9.5 14z"
-              />
-            </svg>
+    <div class="weather-app">
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" placeholder="Search city..." id="cityInput" />
+          <button onclick="getWeatherByCity()" class="search-btn">
+            <i class="fas fa-search"></i>
           </button>
-       
-          <button
-            id="voiceBtn"
-            title="Speak City"
-            style="width: 50px; border: none; cursor: pointer"
-          >
-            <i
-              class="fas fa-microphone"
-              style="color: white; font-size: 20px"
-            ></i>
+          <button id="voiceBtn" class="voice-btn">
+            <i class="fas fa-microphone"></i>
           </button>
-        </div>
-
-    
-
-        <div class="weather-main">
-          <p id="city">Please allow location or search for a city</p>
-
-          <div class="weather-content">
-            
-            <div class="main-temperature" id="temp">--°C</div>
-          </div>
-        </div>
-
-
-        <div class="hourly-section">
-          <h3 id="hourlyTitle">Today's Forecast</h3>
-          <div class="hourly-forecast" id="todayForecast">
-            <!-- Filled by JS -->
-          </div>
-        </div>
-
-        <div class="air-conditions">
-          <h3>Air Conditions</h3>
-          <div class="air-grid">
-            <div><span>💨</span> Wind: <span id="wind"></span></div>
-            <div><span>💧</span> Humidity: <span id="humidity"></span></div>
-            <div><span>🌅</span> Sunrise: <span id="sunrise"></span></div>
-            <div><span>🌇</span> Sunset: <span id="sunset"></span></div>
-          </div>
         </div>
       </div>
 
-      <div class="right-panel">
-        <h3>5-Day Forecast</h3>
-        <div class="weekly-forecast" id="weeklyForecast">
-          <!-- Filled by JS  -->
+      <div class="main-content">
+        <div class="central-display">
+          <div id="city">Weather Sphere</div>
+          <div id="mainIcon"></div>
+          <div id="temp">--</div>
+          <div id="description">--</div>
+
+          <div class="weather-details">
+            <div class="detail-card">
+              <i class="fas fa-wind"></i>
+              <div class="label">Wind</div>
+              <div class="value" id="wind">-- km/h</div>
+            </div>
+            <div class="detail-card">
+              <i class="fas fa-tint"></i>
+              <div class="label">Humidity</div>
+              <div class="value" id="humidity">--%</div>
+            </div>
+            <div class="detail-card">
+              <i class="fas fa-temperature-high"></i>
+              <div class="label">Feels Like</div>
+              <div class="value" id="feelsLike">--°C</div>
+            </div>
+            <div class="detail-card">
+              <i class="fas fa-compress-arrows-alt"></i>
+              <div class="label">Pressure</div>
+              <div class="value" id="pressure">-- hPa</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="forecast-container">
+          <div class="forecast-panel">
+            <div class="panel-header">
+              <i class="fas fa-clock"></i>
+              <span id="hourlyTitle">Today's Forecast</span>
+            </div>
+            <div class="hourly-forecast" id="todayForecast">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+
+          <div class="forecast-panel">
+            <div class="panel-header">
+              <i class="fas fa-calendar-alt"></i>
+              <span>5-Day Forecast</span>
+            </div>
+            <div class="daily-forecast" id="weeklyForecast">
+              <!-- Filled by JS -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
